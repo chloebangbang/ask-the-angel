@@ -10,7 +10,12 @@ pub fn get_commands() -> Vec<poise::Command<Data, anyhow::Error>> {
 }
 
 /// Ask The Angel for some advice
-#[poise::command(slash_command, prefix_command, discard_spare_arguments)]
+#[poise::command(
+    slash_command,
+    install_context = "Guild|User",
+    interaction_context = "Guild|BotDm|PrivateChannel",
+    prefix_command, discard_spare_arguments,
+)]
 // query is a placebo value and won't be used
 // I don't know if underscoring it will go through to discord so this is what I do
 #[allow(unused_variables)]
