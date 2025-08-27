@@ -4,9 +4,7 @@ mod dr_choicers;
 use poise::serenity_prelude as serenity;
 
 pub fn data_dir() -> std::path::PathBuf {
-    let mut dir = dirs::home_dir().unwrap();
-    dir.push(".local");
-    dir.push("share");
+    let mut dir = dirs::data_dir().unwrap();
     dir.push("ata");
     return dir;
 }
