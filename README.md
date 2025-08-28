@@ -13,5 +13,5 @@ and it will respond with a random option from a choice given to the player from 
 
     * Windows: `%appdata%\ata`
     * Linux: `~/.local/share/ata`
-    * MacOS: `$HOME/Library/Application Support\ata` 
+    * MacOS: `$HOME/Library/Application Support/ata` 
 2. Open the project folder in a terminal and type `cargo run`
