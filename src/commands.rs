@@ -16,7 +16,8 @@ pub fn get_commands() -> Vec<poise::Command<Data, anyhow::Error>> {
     slash_command,
     install_context = "Guild|User",
     interaction_context = "Guild|BotDm|PrivateChannel",
-    prefix_command, discard_spare_arguments,
+    discard_spare_arguments,
+    // prefix_command, 
 )]
 pub async fn ask (
     ctx: Context<'_>, 
