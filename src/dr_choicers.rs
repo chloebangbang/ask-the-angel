@@ -376,4 +376,6 @@ pub const CHOICERS: &[&str] = &[
     "Ask", "Don't ask",
     "Don't sleep", "Sleep an incredibly long time",
     "Enter code", "Do not",
+    // Zero-width joiners. Representing the empty choicer in ch4's weird route
+    "\u{200B}", "\u{200B}", "\u{200B}", "\u{200B}" ,
 ];
