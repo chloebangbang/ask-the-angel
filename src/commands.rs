@@ -3,7 +3,7 @@ use crate::dr_choicers::CHOICERS;
 
 use poise::serenity_prelude as serenity;
 
-use rand::Rng;
+use rand::RngExt;
 
 type Context<'a> = poise::Context<'a, Data, anyhow::Error>;
 

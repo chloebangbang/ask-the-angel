@@ -1,6 +1,6 @@
 [package]
 name = "ask_the_angel"
-version = "1.2.0"
+version = "1.2.1"
 authors = ["chloe!!"]
 description = "A Discord bot that allows you to ask The Angel for some advice"
 license = "GPL-3.0-only"
@@ -10,7 +10,7 @@ edition = "2024"
 poise = { git = "https://github.com/serenity-rs/poise.git" }
 tokio = { version = "1", features = ["rt-multi-thread", "time", "parking_lot"] }
 anyhow = "1"
-rand = { version = "0.9", features = ["thread_rng", "std"], default-features = false }
+rand = { version = "0.10", features = ["thread_rng", "std"], default-features = false }
 dirs = "6"
 
 [profile.release]
