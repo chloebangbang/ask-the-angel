@@ -14,6 +14,7 @@ pub fn get_commands() -> Vec<poise::Command<Data, anyhow::Error>> {
 /// Ask The Angel for some advice
 #[poise::command(
     slash_command,
+    prefix_command,
     install_context = "Guild|User",
     interaction_context = "Guild|BotDm|PrivateChannel",
     discard_spare_arguments,

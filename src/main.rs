@@ -29,17 +29,17 @@ async fn main() {
     let framework = poise::Framework::builder()
         .options(poise::FrameworkOptions {
             commands: commands::get_commands(),
-            // prefix_options: poise::structs::PrefixFrameworkOptions {
-                // prefix: Some(";".into()),
-                // additional_prefixes: vec![
-                    // poise::Prefix::Literal("; "),
-                // ],
-                // mention_as_prefix: true,
-                // ignore_bots: false,
-                // ignore_thread_creation: true,
-                // case_insensitive_commands: true,
-                // ..Default::default()
-            // },
+            prefix_options: poise::structs::PrefixFrameworkOptions {
+                prefix: Some(";".into()),
+                additional_prefixes: vec![
+                    poise::Prefix::Literal("; "),
+                ],
+                mention_as_prefix: true,
+                ignore_bots: false,
+                ignore_thread_creation: true,
+                case_insensitive_commands: true,
+                ..Default::default()
+            },
             ..Default::default()
         })
         .setup(|ctx, _ready, framework| {
